@@ -1,0 +1,126 @@
+body {
+	background-color: WhiteSmoke;
+	font-family: "Opens Sans", Arial, sans-serif;
+	font-size: 28px;
+	/*min-height: 100vh;*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header {
+	background: url('images/restaurant1c.jpg') no-repeat center center;
+	background-size: cover;
+	width:100%;
+	min-height: 100vh;
+	display: inline-flex;
+
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	/*justify-content: space-between*/;
+}
+
+
+.container-fluid {
+	padding: 0px;
+}
+
+.nav-buttons{
+	font-size: 24px;
+}
+
+.nav-buttons a {
+	color: black;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+	padding: 0px;
+}
+
+.logo-title {
+	color: black;
+	font-family: "Allura", "Open Sans", sans-serif;
+	font-size: 100px;
+	flex-grow: 1;
+}
+
+.plate-title {
+	font-family: "Allura", "Open Sans", sans-serif;
+	font-size: 38px;
+	text-align: center;
+	border-radius: 100px;
+	border: 25px lightgray solid;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px; 
+	background-color: WhiteSmoke;
+	height: 200px;
+	width: 200px;
+}
+
+.img-circle {
+	height: 300px;
+	width: 300px;
+	margin: 80px 0px 80px 0px;
+}
+
+p {
+	text-align: left;
+	color: gray;
+	line-height: 250%;
+}
+
+.speisekarte-row ul {
+	margin: 70px 0px;
+	padding: 100px 0px;
+	list-style: none;
+	background-image: url("images/wood.jpg");
+}
+
+.speisekarte-row ul li {
+	color: WhiteSmoke;
+	margin-top: 70px;
+}
+
+.price-li {
+	font-style: italic;
+	color: WhiteSmoke;
+	margin-top: 5px;
+}
+
+#kontakt {
+	margin-bottom: 140px;
+}
+
+.kontakt-row {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@media (max-width: 748px){
+
+	header {
+		background: WhiteSmoke;
+	}
+
+    .logo-title {
+        text-align: center;
+    }
+}
