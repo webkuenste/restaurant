@@ -1,6 +1,6 @@
 body {
-	background-color: WhiteSmoke;
-	font-family: "Opens Sans", Arial, sans-serif;
+	background-color: #FCFCFE;
+	font-family: Georgia, Arial, sans-serif;
 	font-size: 28px;
 	/*min-height: 100vh;*/
 	display: -webkit-box;
@@ -52,13 +52,13 @@ nav ul li{
 
 .logo-title {
 	color: black;
-	font-family: "Allura", "Open Sans", sans-serif;
+	font-family: "Allura", cursive;
 	font-size: 100px;
 	flex-grow: 1;
 }
 
 .plate-title {
-	font-family: "Allura", "Open Sans", sans-serif;
+	font-family: "Allura", cursive;
 	font-size: 38px;
 	text-align: center;
 	border-radius: 100px;
@@ -68,7 +68,7 @@ nav ul li{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px; 
-	background-color: WhiteSmoke;
+	background-color: #FCFCFE;
 	height: 200px;
 	width: 200px;
 }
@@ -81,7 +81,7 @@ nav ul li{
 
 p {
 	text-align: left;
-	color: gray;
+	color: black;
 	line-height: 250%;
 }
 
@@ -92,14 +92,19 @@ p {
 	background-image: url("images/wood.jpg");
 }
 
+
+.li-title {
+	letter-spacing: 0.2em;
+}
+
 .speisekarte-row ul li {
-	color: WhiteSmoke;
+	color: #FCFCFE;
 	margin-top: 70px;
 }
 
 .price-li {
 	font-style: italic;
-	color: WhiteSmoke;
+	color: #FCFCFE;
 	margin-top: 5px;
 }
 
@@ -112,12 +117,45 @@ p {
 	padding-right: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+	
 }
 
-@media (max-width: 748px){
+.clock {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 350px;
+	height: 350px;
+}
+
+.clock::after {
+	content: "Öffnungszeiten";
+
+}
+
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:350px;
+   top:350px;
+   margin-top:-350px;
+}
+
+.mapcontainer {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 350px;
+	overflow: hidden;
+	height: 350px;
+	border-radius: 50%;
+}
+
+@media (max-width: 992px){
 
 	header {
-		background: WhiteSmoke;
+		background: url('images/restaurant1d.jpg') no-repeat center center;
 	}
 
     .logo-title {

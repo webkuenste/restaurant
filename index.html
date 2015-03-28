@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="de">
 <html>
 	<head>
 		<title>
@@ -9,13 +10,13 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 		<link href="style.css" type="text/css" rel="stylesheet" />
+
+		<link rel="icon" type="image/png" href="images/favicon_restaurant.png">
 
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -25,24 +26,28 @@
 	</head>
 	
 	<body>
-		<header>
+		<header id="home">
 			<!--div class="container-fluid">
 
-				<div class="row col-xs-6 col-xs-offset-6 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
-					<nav>
-						<ul>
-						  <li><span class="nav-buttons"><a href="#about">&Uuml;ber uns</a></span></li>
-						  <li><span class="nav-buttons"><a href="#speisekarte">Speisekarte</a></span></li>
-						  <li><span class="nav-buttons"><a href="#kontakt">Kontakt</a></span></li>
-						</ul>
-					</nav>
+				<div class="row"> 
+					<div class="col-xs-6 col-xs-offset-6 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
+						<nav>
+							<ul>
+							  <li><span class="nav-buttons"><a href="#about">&Uuml;ber uns</a></span></li>
+							  <li><span class="nav-buttons"><a href="#speisekarte">Speisekarte</a></span></li>
+							  <li><span class="nav-buttons"><a href="#kontakt">Kontakt</a></span></li>
+							</ul>
+						</nav>
+					</div>
 				</div><!--row-->
 			<!--/div><!-- container -->
 
 			<div class="container-fluid">
 
-				<div class="row col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7">
-				    <div class="logo-title">Restaurant Gourmet</div>
+				<div class="row"> 
+					<div class="col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7">
+				    	<div class="logo-title">Restaurant Gourmet</div>
+				    </div>
 				</div><!--row-->
 
 			</div><!-- container -->
@@ -52,57 +57,78 @@
 
 		<div class="container-fluid">
 
-			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    <div class="plate-title" id="about">&Uuml;ber uns</div>
+			<div class="row"> 
+				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+			    	<div class="plate-title" id="about">Über uns</div>
+			    </div>
 			</div><!--row-->
 
-			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
 			   <p>Unser Restaurant ist für seine gute Küche bekannt. Lassen Sie sich in unserem mehrfach ausgezeichneten Restaurant kulinarisch verwöhnen.</p>
 
 			    <img src="images/restaurant2.jpg" class="img-circle" alt="Restaurant"> 
 
-				<p>Frische und Qualität der Produkte sind unverzichtbare Basis für gutes Essen.Unsere Küche bietet Ihnen eine reiche Auswahl an internationalen Speisen.</p>
+				<p>Frische und Qualität der Produkte sind unverzichtbare Basis für gutes Essen. Unsere Küche bietet Ihnen eine reiche Auswahl an internationalen Speisen.</p>
 			</div> <!--row-->
 
-			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    <div class="plate-title" id="speisekarte">Speisekarte</div>
+			<div class="row"> 
+				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+			    	<div class="plate-title" id="speisekarte">Speisekarte</div>
+				</div>			    
 			</div><!--row-->
 
-			<div class="row speisekarte-row col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
-			   <ul>
-			   		<li>EMPFEHLUNG DES HAUSES</li>
-			   		<li>Medaillons vom Rinderfilet</li>
-			   		<div class="price-li">~22~</div>
-			   		<li>Ragout von Edelfischen</li>
-			   		<div class="price-li">~20~</div>
-			   		<li>Rosa gebratenes Kalbsfleisch</li>
-			   		<div class="price-li">~18~</div>
-			   		<li>Gebratenes Rotbarbenfilet</li>
-			   		<div class="price-li">~20~</div>
-			   		<li>Gefüllte Hähnchenroulade</li>
-			   		<div class="price-li">~18~</div>
-			   </ul>	
-
+			<div class="row speisekarte-row"> 
+				<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
+				   <ul>
+				   		<li class="li-title">EMPFEHLUNG DES HAUSES</li>
+				   		<li>Medaillons vom Rinderfilet</li>
+				   		<div class="price-li">~22~</div>
+				   		<li>Ragout von Edelfischen</li>
+				   		<div class="price-li">~20~</div>
+				   		<li>Rosa gebratenes Kalbsfleisch</li>
+				   		<div class="price-li">~18~</div>
+				   		<li>Gebratenes Rotbarbenfilet</li>
+				   		<div class="price-li">~20~</div>
+				   		<li>Gefüllte Hähnchenroulade</li>
+				   		<div class="price-li">~18~</div>
+				   </ul>	
+				</div>
 			</div> <!--row-->
 
-			<div class="row col-xs-12 kontakt-row text-center">
-			    <div class="plate-title" id="kontakt">Kontakt</div>
+			<div class="row">
+				<div class="col-xs-12 kontakt-row text-center">
+				    <div class="plate-title" id="kontakt">Kontakt</div>
+				</div>
+			</div>
 
-			    <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Rathaus+Aachen,+Markt,+52062,+Aachen&amp;aq=0&amp;oq=Rat+52062+Aachen&amp;sll=50.777436,6.086158&amp;sspn=0.005801,0.016512&amp;ie=UTF8&amp;hq=Rathaus&amp;hnear=Markt,+52062+Aachen&amp;t=m&amp;fll=50.776028,6.083862&amp;fspn=0.0029,0.008256&amp;st=103079826847897130309&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=50.775857,6.08325&amp;spn=0.0029,0.008256&amp;output=embed"></iframe>
+			<div class="row">
+				<div class="col-lg-3 col-lg-offset-2 text-center">
+				    <img src="images/clock.png" class="clock" alt="Öffnungszeiten">
+				</div>
+
+				<div class="col-lg-3 col-lg-offset-2 text-center">
+				    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+
+				    <div class="mapcontainer">
+				    	<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Rathaus+Aachen,+Markt,+52062,+Aachen&amp;aq=0&amp;oq=Rat+52062+Aachen&amp;sll=50.777436,6.086158&amp;sspn=0.005801,0.016512&amp;ie=UTF8&amp;hq=Rathaus&amp;hnear=Markt,+52062+Aachen&amp;t=m&amp;fll=50.776028,6.083862&amp;fspn=0.0029,0.008256&amp;st=103079826847897130309&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=50.775857,6.08325&amp;spn=0.0029,0.008256&amp;output=embed"></iframe>
+					</div>
+				</div>
 			</div><!--row-->
 
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 text-center">
+				    <a href="#home"><img src="images/circleup2.svg"></a>
+				</div>
+			</div><!--row-->
 
 		</div> <!-- container -->
 
-		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-		<!--jQuery-->
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 		<script>
-		/* smooth scrolling */
+
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
