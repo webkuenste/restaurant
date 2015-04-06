@@ -2,7 +2,6 @@ body {
 	background-color: #FCFCFE;
 	font-family: Georgia, Arial, sans-serif;
 	font-size: 28px;
-	/*min-height: 100vh;*/
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -13,26 +12,79 @@ body {
 }
 
 header {
-	background: url('images/restaurant1c.jpg') no-repeat center center;
+	background: url('images/restaurant1cnew.jpg') no-repeat center center;
 	background-size: cover;
 	width:100%;
 	min-height: 100vh;
 	display: inline-flex;
-
 	display: -webkit-box;
   	display: -moz-box;
   	display: -ms-flexbox;
   	display: -webkit-flex;
   	display: flex;
-
 	flex-direction: column;
 	justify-content:center;
 	align-items:center;
-	/*justify-content: space-between*/;
 }
 
+.row {
+	margin-right: 0px;
+}
+
+.menuicon {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	color: black;
+	cursor: pointer;
+	font-size: 52px;
+	z-index: 2;
+}
+
+.newmenu {
+	height: 100vh;
+	width: 50vw;
+	border-right: 0.28em solid darkgreen;
+	background: rgba(255,255,255,0.72);
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	left: -50vw;
+	-moz-transition: all 0.8s ease-in-out;
+         transition: all 0.8s ease-in-out;
+    display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: flex-end;
+}
+
+#menucheckbox {
+	display: none;
+}
+
+#menucheckbox:checked ~ .newmenu {
+	left: 0vw;
+}
+
+.newmenu {
+	list-style-type: none;
+}
+
+.newmenu li {
+	font-size: 40px;
+	padding-right: 6%;
+}
+
+.newmenu li a:link {
+	color: black;
+}
 
 .container-fluid {
+	margin: 0px;
 	padding: 0px;
 }
 
@@ -52,6 +104,8 @@ nav ul li{
 
 .logo-title {
 	color: black;
+	padding-left: 4%;
+	padding-top: 4%;
 	font-family: "Allura", cursive;
 	font-size: 100px;
 	flex-grow: 1;
@@ -92,7 +146,6 @@ p {
 	background-image: url("images/wood.jpg");
 }
 
-
 .li-title {
 	letter-spacing: 0.2em;
 }
@@ -117,7 +170,6 @@ p {
 	padding-right: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
-	
 }
 
 .clock {
@@ -126,11 +178,6 @@ p {
 	margin-bottom: 40px;
 	width: 350px;
 	height: 350px;
-}
-
-.clock::after {
-	content: "Öffnungszeiten";
-
 }
 
 .overlay {
@@ -160,5 +207,20 @@ p {
 
     .logo-title {
         text-align: center;
+        -webkit-transition-delay: 0.4s; 
+                transition-delay: 0.4s;
     }
+
+    .newmenu {
+    	border-right: none;
+    	left: -100vw;
+		width: 98vw;
+		align-items: center;
+	}
+
+	#menucheckbox:checked ~  header .row .logo-title {
+		visibility: hidden;
+		-webkit-transition-delay: 0s;
+		        transition-delay: 0s;
+	}
 }
