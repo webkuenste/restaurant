@@ -6,7 +6,7 @@
 			Restaurant Gourmet
 		</title>
 
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<meta name="description" content="Restaurant">
 		<meta name="author" content="WebKünste">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 		<link href="style.css" type="text/css" rel="stylesheet" />
 		<link rel="icon" type="image/png" href="images/favicon_restaurant.png">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="animate.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 
 	</head>
@@ -51,21 +51,21 @@
 
 			<div class="row"> 
 				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    	<div class="plate-title" id="about">Über uns</div>
+			    	<div class="plate-title" id="about"><div class="plate-title-text">Über uns</div></div>
 			    </div>
 			</div>
 
 			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
 			   <p>Unser Restaurant ist für seine gute Küche bekannt. Lassen Sie sich in unserem mehrfach ausgezeichneten Restaurant kulinarisch verwöhnen.</p>
 
-			    <img src="images/restaurant2.jpg" class="img-circle" alt="Restaurant"> 
+			    <img src="images/restaurant2.jpg" class="img-circle wow zoomIn" data-wow-duration="1s" alt="Restaurant"> 
 
 				<p>Frische und Qualität der Produkte sind unverzichtbare Basis für gutes Essen. Unsere Küche bietet Ihnen eine reiche Auswahl an internationalen Speisen.</p>
 			</div>
 
 			<div class="row"> 
 				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    	<div class="plate-title" id="speisekarte">Speisekarte</div>
+			    	<div class="plate-title" id="speisekarte"><div class="plate-title-text">Speisekarte</div></div>
 				</div>			    
 			</div>
 
@@ -89,36 +89,40 @@
 
 			<div class="row">
 				<div class="col-xs-12 kontakt-row text-center">
-				    <div class="plate-title" id="kontakt">Kontakt</div>
+				    <div class="plate-title" id="kontakt"><div class="plate-title-text">Kontakt</div></div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-3 col-lg-offset-2 text-center">
-				    <img src="images/clock.png" class="clock" alt="Öffnungszeiten">
-				</div>
+				<div class="col-xs-10 col-xs-offset-1 text-center">
+			    	<img src="images/clock.png" class="opening-hours-image clock" alt="Öffnungszeiten" />
+			    	<span class="opening-hours-text">Öffnungszeiten:<br />6-12</span>
+    			</div>
+			</div>
 
-				<div class="col-lg-3 col-lg-offset-2 text-center">
-				    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 text-center">
+			    	<a href="https://goo.gl/maps/eToLr"><img src="images/map-restaurant.jpg" class="opening-hours-image mapcontainer" alt="Anfahrt" /></a>
+			    	<span class="address-text">Am Rathaus, Aachen</span>
+    			</div>
+			</div>
 
-				    <div class="mapcontainer">
-				    	<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Rathaus+Aachen,+Markt,+52062,+Aachen&amp;aq=0&amp;oq=Rat+52062+Aachen&amp;sll=50.777436,6.086158&amp;sspn=0.005801,0.016512&amp;ie=UTF8&amp;hq=Rathaus&amp;hnear=Markt,+52062+Aachen&amp;t=m&amp;fll=50.776028,6.083862&amp;fspn=0.0029,0.008256&amp;st=103079826847897130309&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=50.775857,6.08325&amp;spn=0.0029,0.008256&amp;output=embed"></iframe>
+			<footer>
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 text-center">
+					    <a href="#home"><img src="images/circleup2.svg"></a>
 					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2 text-center">
-				    <a href="#home"><img src="images/circleup2.svg"></a>
-				</div>
-			</div>
+			</footer>
 
 		</div> <!-- container -->
-
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
-
+		<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>

@@ -121,19 +121,27 @@ nav ul li{
 }
 
 .plate-title {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image: url("images/plate3.svg");
+	height: 232px;
+	width: 232px;
+	background-size: contain;
+}
+
+.plate-title-text {
 	font-family: "Allura", cursive;
 	font-size: 38px;
 	text-align: center;
-	border-radius: 100px;
-	border: 25px lightgray solid;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 50px; 
-	background-color: #FCFCFE;
-	height: 200px;
-	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 .img-circle {
@@ -149,10 +157,10 @@ p {
 }
 
 .speisekarte-row ul {
-	margin: 70px 0px;
+	margin: 0px 0px;
 	padding: 100px 0px;
 	list-style: none;
-	background-image: url("images/wood.jpg");
+	background: url("images/wood.jpg");
 }
 
 .li-title {
@@ -170,10 +178,6 @@ p {
 	margin-top: 5px;
 }
 
-#kontakt {
-	margin-bottom: 140px;
-}
-
 .kontakt-row {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -181,34 +185,35 @@ p {
 	margin-right: 0px;
 }
 
-.clock {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	width: 350px;
-	height: 350px;
+.opening-hours-image{
+	width: 250px;
 }
 
-.overlay {
-   background:transparent; 
-   position:relative; 
-   width:100%;
-   height:350px;
-   top:350px;
-   margin-top:-350px;
+.opening-hours-text, .address-text {
+	display: inline-block;
+	text-align: left;
+	width: 250px;
+}
+
+.clock {
+	margin-bottom: 40px;
+	width: 250px;
+	height: 250px;
 }
 
 .mapcontainer {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	width: 350px;
+	width: 250px;
 	overflow: hidden;
-	height: 350px;
+	height: 250px;
 	border-radius: 50%;
 	-moz-border-radius:  50%;
 	-webkit-border-radius:  50%;
 	border: 50px solid lightgrey;	
+}
+
+footer img{
+	margin: 40px 0px;
+	width: 40px;
 }
 
 @media (max-width: 992px){
