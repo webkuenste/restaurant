@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	background: url('images/restaurant1cnew.jpg') no-repeat center center;
+	background: url('../images/restaurant.jpg') no-repeat center center;
 	background-size: cover;
 	width:100%;
 	min-height: 100vh;
@@ -126,7 +126,7 @@ nav ul li{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	background-image: url("images/plate4.svg");
+	background-image: url("../images/plate.svg");
 	height: 252px;
 	width: 262px;
 	background-size: contain;
@@ -222,7 +222,7 @@ footer img{
 	}
 
 	header {
-		background: url('images/restaurant1d.jpg') no-repeat center center;
+		background: url('../images/restaurant_transparent.jpg') no-repeat center center;
 	}
 
     .logo-title {
