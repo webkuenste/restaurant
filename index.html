@@ -1,142 +1,145 @@
 <!DOCTYPE html>
 <html lang="de">
 
-	<head>
+   <head>
+
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Restaurant">
+      <meta name="author" content="WebKünste">
+
+
+      <title>Restaurant Gourmet</title>
+
+
+      <link rel="icon" type="image/png" href="images/favicon.png">
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/style.min.css" type="text/css">
+      <link rel="stylesheet" href="css/vendor/animate.min.css" >
+      <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Allura' type='text/css'>
+
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+   </head>
+
+   <body>
+      <div class="container-fluid">
+
+         <input type="checkbox" id="menucheckbox" value="" name="">
+
+         <ul class="newmenu">
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#speisekarte">Speisekarte</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+         </ul>
+
+         <header id="home">
+            <div class="row"> 
+               <label for="menucheckbox" class="menuicon">☰</label>
+            </div>
+
+            <div class="row"> 
+               <div class="col-md-5 col-md-offset-6 col-lg-5 col-lg-offset-6">
+                  <div class="logo-title">Restaurant Gourmet</div>
+               </div>
+            </div>
+
+            <h1></h1>
+         </header>
+
+      </div>
+
+      <div class="container-fluid">
+
+         <div class="row"> 
+            <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+               <div class="plate-title" id="about"><div class="plate-title-text">Über uns</div></div>
+            </div>
+         </div>
+
+         <div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
+            <p>Unser Restaurant ist für seine gute Küche bekannt. Lassen Sie sich in unserem mehrfach ausgezeichneten Restaurant kulinarisch verwöhnen.</p>
+
+            <img src="images/restaurant2.jpg" class="img-circle wow zoomIn" data-wow-duration="1s" alt="Restaurant"> 
+
+            <p>Frische und Qualität der Produkte sind unverzichtbare Basis für gutes Essen. Unsere Küche bietet Ihnen eine reiche Auswahl an internationalen Speisen.</p>
+         </div>
+
+         <div class="row"> 
+            <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
+               <div class="plate-title" id="speisekarte"><div class="plate-title-text">Speisekarte</div></div>
+            </div>
+         </div>
+
+         <!-- Speisekarte -->
+         <div class="row speisekarte-row"> 
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
+               <ul>
+                  <li class="li-title">EMPFEHLUNG DES HAUSES</li>
+                  <li>Medaillons vom Rinderfilet</li>
+                  <div class="price-li">~22~</div>
+                  <li>Ragout von Edelfischen</li>
+                  <div class="price-li">~20~</div>
+                  <li>Rosa gebratenes Kalbsfleisch</li>
+                  <div class="price-li">~18~</div>
+                  <li>Gebratenes Rotbarbenfilet</li>
+                  <div class="price-li">~20~</div>
+                  <li>Gefüllte Hähnchenroulade</li>
+                  <div class="price-li">~18~</div>
+               </ul>	
+            </div>
+         </div>
+
+         <!-- Kontakt -->
+         <div class="row">
+            <div class="col-xs-12 kontakt-row text-center">
+               <div class="plate-title" id="kontakt"><div class="plate-title-text">Kontakt</div></div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+               <img src="images/clock.png" class="opening-hours-image clock" alt="Öffnungszeiten" />
+               <span class="opening-hours-text">Öffnungszeiten:<br />6-12</span>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+               <a href="https://goo.gl/maps/eToLr"><img src="images/map.jpg" class="opening-hours-image mapcontainer" alt="Anfahrt" /></a>
+               <span class="address-text">Am Rathaus,<br />Aachen</span>
+            </div>
+         </div>
+
+         <footer>
+            <div class="row">
+               <div class="col-xs-8 col-xs-offset-2 text-center">
+                  <a href="#home"><img src="images/circleup.svg"></a>
+               </div>
+            </div>
+         </footer>
+
+      </div> <!-- container -->
+
+      <!-- Scripts -->
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Restaurant">
-		<meta name="author" content="WebKünste">
+      <script src="js/functions.min.js"></script>
 
-
-		<title>Restaurant Gourmet</title>
-	
-
-		<link rel="icon" type="image/png" href="images/favicon.png">
-
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/style.min.css" type="text/css">
-		<link rel="stylesheet" href="css/vendor/animate.min.css" >
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Allura' type='text/css'>
-
-		<!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
-
-	</head>
-	
-	<body>
-		<div class="container-fluid">
-
-			<input type="checkbox" id="menucheckbox" value="" name="">
-
-			<ul class="newmenu">
-			  <li><a href="#about">Über uns</a></li>
-			  <li><a href="#speisekarte">Speisekarte</a></li>
-			  <li><a href="#kontakt">Kontakt</a></li>
-			</ul>
+      <script src="js/vendor/wow.js"></script>
+      <script>
+         new WOW().init();
+      </script>
 		
-			<header id="home">
-				<div class="row"> 
-					<label for="menucheckbox" class="menuicon">☰</label>
-				</div>
-		
-				<div class="row"> 
-					<div class="col-md-5 col-md-offset-6 col-lg-5 col-lg-offset-6">
-				    	<div class="logo-title">Restaurant Gourmet</div>
-				    </div>
-				</div>
-
-				<h1></h1>
-			</header>
-
-		</div>
-
-		<div class="container-fluid">
-
-			<div class="row"> 
-				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    	<div class="plate-title" id="about"><div class="plate-title-text">Über uns</div></div>
-			    </div>
-			</div>
-
-			<div class="row col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
-			   <p>Unser Restaurant ist für seine gute Küche bekannt. Lassen Sie sich in unserem mehrfach ausgezeichneten Restaurant kulinarisch verwöhnen.</p>
-
-			    <img src="images/restaurant2.jpg" class="img-circle wow zoomIn" data-wow-duration="1s" alt="Restaurant"> 
-
-				<p>Frische und Qualität der Produkte sind unverzichtbare Basis für gutes Essen. Unsere Küche bietet Ihnen eine reiche Auswahl an internationalen Speisen.</p>
-			</div>
-
-			<div class="row"> 
-				<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 text-center">
-			    	<div class="plate-title" id="speisekarte"><div class="plate-title-text">Speisekarte</div></div>
-				</div>			    
-			</div>
-
-			<div class="row speisekarte-row"> 
-				<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
-				   <ul>
-				   		<li class="li-title">EMPFEHLUNG DES HAUSES</li>
-				   		<li>Medaillons vom Rinderfilet</li>
-				   		<div class="price-li">~22~</div>
-				   		<li>Ragout von Edelfischen</li>
-				   		<div class="price-li">~20~</div>
-				   		<li>Rosa gebratenes Kalbsfleisch</li>
-				   		<div class="price-li">~18~</div>
-				   		<li>Gebratenes Rotbarbenfilet</li>
-				   		<div class="price-li">~20~</div>
-				   		<li>Gefüllte Hähnchenroulade</li>
-				   		<div class="price-li">~18~</div>
-				   </ul>	
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12 kontakt-row text-center">
-				    <div class="plate-title" id="kontakt"><div class="plate-title-text">Kontakt</div></div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1 text-center">
-			    	<img src="images/clock.png" class="opening-hours-image clock" alt="Öffnungszeiten" />
-			    	<span class="opening-hours-text">Öffnungszeiten:<br />6-12</span>
-    			</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1 text-center">
-			    	<a href="https://goo.gl/maps/eToLr"><img src="images/map.jpg" class="opening-hours-image mapcontainer" alt="Anfahrt" /></a>
-			    	<span class="address-text">Am Rathaus,<br />Aachen</span>
-    			</div>
-			</div>
-
-			<footer>
-				<div class="row">
-					<div class="col-xs-8 col-xs-offset-2 text-center">
-					    <a href="#home"><img src="images/circleup.svg"></a>
-					</div>
-				</div>
-			</footer>
-
-		</div> <!-- container -->
-
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		
-		<script src="js/functions.min.js"></script>
-		
-		<script src="js/vendor/wow.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-		
-	</body>
+   </body>
 </html>
