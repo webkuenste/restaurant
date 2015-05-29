@@ -48,12 +48,65 @@ header {
 
 .menuicon {
   position: absolute;
-  top: 0px;
-  left: 10px;
+  width: 46px;
+  height: 44px;
+  top: 20px;
+  left: 20px;
   color: black;
   cursor: pointer;
-  font-size: 52px;
   z-index: 2;
+}
+
+#menucheckbox:checked ~ #home .row .menuicon .first-line {
+  -webkit-transform: rotate(45deg) translate(14px, 14px) scaleX(1.2);
+          transform: rotate(45deg) translate(14px, 14px) scaleX(1.2);   
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
+}
+
+#menucheckbox:checked ~ #home .row .menuicon .second-line {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
+  visibility: hidden;
+}
+
+#menucheckbox:checked ~ #home .row .menuicon .third-line {
+  -webkit-transform: rotate(-45deg) translate(14px, -14px) scaleX(1.2);
+          transform: rotate(-45deg) translate(14px, -14px) scaleX(1.2);
+  -webkit-transition: all 0.8s ease-in-out;
+          transition:all 0.8s ease-in-out;
+}
+
+.first-line {
+  position: absolute;
+  top: 0px;
+  width: 46px;
+  height: 6px;
+  background: black;
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
+}
+
+.second-line {
+  position: absolute;
+  top: 20px;
+  width: 46px;
+  height: 6px;
+  background: black;
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
+}
+
+.third-line {
+  position: absolute;
+  top: 40px;
+  width: 46px;
+  height: 6px;
+  background: black;
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
 }
 
 .newmenu {
@@ -254,6 +307,25 @@ footer img{
     visibility: hidden;
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
+  }
+
+
+}
+
+@media (max-width: 442px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .logo-title {
+    font-size: 60px;
+  }
+
+  .img-circle {
+    height: 200px;
+    width: 200px;
+    margin: 20px 0px;
   }
 
 
